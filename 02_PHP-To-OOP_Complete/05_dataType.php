@@ -19,11 +19,31 @@
     var_dump($num); */
 
 
-    // echo "Boolean". "<br>";
-    // echo "Boolean". "<br>";
-    // echo "null". "<br>";
-    // echo "Object(Class)". "<br>";
-    // echo "Recourse". "<br>";
+/*     echo "Boolean". "<br>";
+    $isLogin = true;
+    var_dump($isLogin) */
+
+    
+    /* echo "null". "<br>";
+    $noValuel = null;
+    // $noValuel; -> Undefined
+    echo var_dump($noValuel); */
+
+/*     echo "Array". "<br>";
+    $arr = ["Php","Javascript","Python","C","c++", 5];
+    echo var_dump($arr); */
+
+
+    /* echo "Object(Class)". "<br>";
+
+    $user = new className(); */
+
+
+    echo "Recourse". "<br>";
+    // store data in database / ftp connect
+
+    $connection = ftp_connect("127.0.0.1") or die("Local Host Not FOund");
+    echo var_dump($connection);
 
 ?>
 

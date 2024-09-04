@@ -109,5 +109,153 @@ echo "<h3 style='color:teal'>Php with Html<h3>";
 - find php.ini
 - find display_error & on
 
-
 ### Constant
+
+### DataType
+
+```php
+
+<?php
+    echo "DataType". "<br>";
+
+    echo "String";
+    $name = "hello 'World' Php";
+    var_dump($name . "<br>");
+    echo $name . "<br>";
+
+
+    echo "Integer". "<br>";
+    $num = 12345678;
+    echo $num . "<br>";
+    var_dump($num);
+
+
+    echo "Float". "<br>";
+    $num = 3.1416;
+    echo $num;
+    var_dump($num);
+
+
+    echo "Boolean". "<br>";
+    $isLogin = true;
+    var_dump($isLogin)
+
+
+    echo "null". "<br>";
+    $noValuel = null;
+    // $noValuel; -> Undefined
+    echo var_dump($noValuel);
+
+    echo "Array". "<br>";
+    $arr = ["Php","Javascript","Python","C","c++", 5];
+    echo var_dump($arr);
+
+
+    echo "Object(Class)". "<br>";
+    $user = new className();
+
+
+    echo "Recourse". "<br>";
+    // store data in database / ftp connect
+
+    $connection = ftp_connect("127.0.0.1") or die("Local Host Not FOund");
+    echo var_dump($connection);
+
+?>
+```
+
+### How PHP WORKS
+
+![alt text](image-2.png)
+
+- browser -> Request[php -> interprate[exicute] & Convert html Code] -> Server
+- browser <- Request[index.php afterCompile html Doc] <- Server
+- inspact element -> Request for chack Server Request
+
+### Operator
+
+![alt text](image-3.png)
+
+##### Arithmatic Operator
+
+> - | - | \* | / | \*\* | %
+
+```php
+<?php
+// Arithmatic Operator
+echo "Arithmatic Operator" . "<br>";
+
+$num1 = 12;
+$num2 = 2;
+
+$result = $num1 + $num2;
+$result = $num1 - $num2;
+$result = $num1 * $num2;
+$result = $num1 / $num2;
+$result = $num1 % $num2;
+$result = $num1 ** $num2;
+
+echo "Number is " . $result;
+?>
+```
+
+##### Assignment Operator
+
+> = | += | -= | \*= | /= | %=
+
+```php
+<?php
+ => Assignment Operator
+echo "Assignment Operator" . "<br>";
+
+$num1 = 12;
+$num2 = 2;
+$result = $num1 + $num2;
+
+// $num3 = $num1;
+$num1 += $num2; //=> $num2 = $num2 + $num2  = 12+2 => 14
+$num1 -= $num2; //=> $num2 = $num2 - $num2  = 12-2 => 10
+$num1 *= $num2; //=> $num2 = $num2 * $num2  = 12*2 => 24
+$num1 /= $num2; //=> $num2 = $num2 / $num2  = 12/2 => 6
+$num1 %= $num2; //=> $num2 = $num2 % $num2  = 12%2 => 0
+
+echo $num1;
+
+echo "Number is " . $result;
+?>
+```
+
+##### Comparison Operator
+
+> == | === | < | > | >= | <= | <> | != | !== | <=>
+
+- <=> Spaceship Operator
+- var_dump($num1 <=> $num2)
+- ৩ টা ভ্যেলু একসাথে কম্পেয়ার করে
+  - Less then < -1
+  - Equal = 0
+  - Grater Then > 1
+
+```php
+<?php
+// => Comparison  Operator
+echo "Comparison Operator" . "<br>";
+
+$num1 = 12;
+$num2 = 112;
+
+$result = $num1 == $num2;
+$result = $num1 === $num2;
+$result = $num1 != $num2;
+$result = $num1 !== $num2;
+$result = $num1 <> $num2; //=> not Equal
+$result = $num1 > $num2;
+$result = $num1 >= $num2;
+$result = $num1 < $num2;
+$result = $num1 <= $num2;
+$result = $num1 <=> $num2; < -1 / = 0 / > 1
+var_dump($num1 <=> $num2)
+
+// echo $result;
+?>
+```
