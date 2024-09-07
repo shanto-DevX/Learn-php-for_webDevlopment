@@ -97,10 +97,39 @@ $strNum = "10";
     -> .= assignment concatinate Opearator
 */
 
-$charIS = "Hyper Text Preprocesor";
+/* $charIS = "Hyper Text Preprocesor";
 $strNum = " 10";
 echo "PHP : $charIS $strNum ". "<br>"; 
 
 $charIS.=$strNum;
-echo "PHP : $charIS". "<br>"; 
+echo "PHP : $charIS". "<br>";  */
+?>
+
+<?php
+echo "Logical Operator" . "<br>";
+// and [T = T -> T], [T = F -> F]
+// or [T = F -> T] , [F = F -> F]
+// xor [T = T -> F] , [T = F -> T]
+// && [T = T -> T], [T = F -> F]
+// || [T = F -> T] , [F = F -> F]
+// ! [!T = F]
+
+$a = 10;
+$b = 5;
+
+// if($a == 10 && $b == 5)
+// if($a == 10 and $b == 5)
+// if($a == 10 or $b == 50)
+// if($a == 160 || $b == 50)
+
+
+// if($a == 10 xor $b == 5){
+// if($a == 160 xor $b == 5){
+if($a != 5){
+    echo "True";
+}else{
+    echo "False";
+}
+
+
 ?>
