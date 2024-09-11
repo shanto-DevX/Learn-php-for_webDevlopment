@@ -94,12 +94,83 @@ test2(); */
 
 // * -> Variable Function
 
-function test(){
+/* function test(){
     echo "Test Function";
 }
 
-$test = "test"; //* FunctionName
-echo test();
+$test = "testxxxx"; //* FunctionName
+echo test(); */
+
+/* 
+    * প্রথমে একটি ফাংশন তেরি করে নিতে হবে এবং সেইটা একটা ভেরিএবল এর মধ্যে ষ্টোর করে রাখতে হবে। এবার সেই ভেরিএবল এর স্ট্রিং এ ফাংশন এর নাম পাস করতে হবে এবং ভেরিএবল টা ফাংশন এর মত echo $Varname() দিয়ে কল করতে হবে। এইটাকে বলে ভেরিএবল ফাংশন...
+*/
+
+/* function nameIs(){
+    echo "Saiful Islam SHanto";
+}
+
+$nameFunc = "nameIs";
+echo $nameFunc() */
 
 
+// * -> CallBack Function
+
+/* function test(){
+    echo "Test Function Called";
+}
+
+function main($x){
+}
+
+main(test()); */
+
+
+/* function test(){
+    echo "Test Function Called";
+}
+
+$testInVar = "test";
+
+function main($x){
+    $x();
+}
+
+main($testInVar); */
+
+?>
+
+<?php
+// => 10 Basic Function
+
+// $str = "Saiful Islam Shanto";
+// echo strlen($str);
+// echo var_dump($str);
+// echo var_dump($str);
+
+// echo date("m.d.y");
+
+// phpinfo()
+
+// $var = "Abc";
+// echo is_string($var);
+// $var2 = 123;
+// echo is_int($var2);
+
+// echo( rand()."<br>");
+// echo( rand(10,20)."<br>");
+
+/* echo "Before <br>";
+// die;
+// die();
+
+// exit;
+// exit();
+
+echo "After <br>"; */
+
+
+$strIs = "Hello World Php";
+// echo substr($strIs,8)
+// echo substr($strIs,-5)
+echo substr_replace($strIs," Hola",14);
 ?>

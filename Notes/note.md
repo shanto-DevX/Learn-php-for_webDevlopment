@@ -259,3 +259,25 @@ var_dump($num1 <=> $num2)
 // echo $result;
 ?>
 ```
+
+### Foreach
+
+- Use in array Item Travering
+- foreach is a loop
+
+```php
+
+<?php
+
+    $users = ["A","B","C","D","E","F"];
+
+    foreach($users as $user){
+        echo $user;
+    }
+    echo "<br> <hr> <br>";
+    foreach($users as $userList):
+        echo $userList;
+    endforeach;
+?>
+
+```
