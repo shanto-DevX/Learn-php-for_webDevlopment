@@ -281,3 +281,96 @@ var_dump($num1 <=> $num2)
 ?>
 
 ```
+
+### Local & Global Variable
+
+##### ✨ Local Variable
+
+- Function এর ভিতরে কাজ করে
+
+```php
+<?php
+
+  function getName(){
+      $name = "shanto";
+      echo($name);
+  }
+
+  echo $name; |> Error, can't access outside
+  getName()
+
+?>
+
+```
+
+##### ✨ Global Variable
+
+- Create outide the function and access everywhere
+- use sameName -> Global & Local Variable
+- global Variable ব্যবহার এর জন্য function এর ভিতরে global কিওয়ার্ড দিতে হয়
+
+```php
+<?php
+
+  function getName(){
+      $name = "shanto";
+      echo($name);
+  }
+
+  echo $name; |> Error, can't access outside
+  getName()
+
+?>
+
+##### ✨
+```
+
+##### ✨ Global Variable inside function
+
+- change Global Variable inside the function
+
+```php
+
+<?php
+
+    // * change Global Variable inside the function
+    $name = "Saiufl ";
+
+    function getName(){
+        global $name;
+        // -> Update Global Variable
+        $name = "shanto ";
+        echo($name. "Inside Function <br>");
+    }
+
+    getName();
+    echo($name. "Outside Function <br>");
+
+?>
+```
+
+##### ✨ Global Variable inside function
+
+```php
+
+<?php
+
+$name = "Saiful - G 1 <br>";
+function test(){
+    // $name = "Islam - L  2<br>";
+    global $name;
+    echo $name;
+
+    function innerTest(){
+        $name = "Shanto - N L 3<br>";
+        echo $name;
+    }
+
+}
+
+echo $name;
+test();
+innerTest();
+
+?>
+```

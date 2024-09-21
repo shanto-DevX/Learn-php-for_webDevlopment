@@ -31,13 +31,13 @@
 
     } */
 
-    $userData = [
+/*     $userData = [
         [1," Shanto ",24],
         [2," Shanxxdto ",25],
         [3," Shddffdanto ",26],
     ];
 
-/*     for($i=0; $i<count($userData); $i++){
+    for($i=0; $i<count($userData); $i++){
 
         for($j=0; $j<count($userData[$i]); $j++){
             echo $userData[$i][$j];
@@ -46,9 +46,17 @@
         echo "<br>";
     } */
 
-    foreach($userData as $userData1){
-        foreach($userData as $users){
-            echo $userData[$userData1][$users];
+        $userInfo = [
+        [1," Shanto ",24],
+        [15," dsAfs ",26],
+        [13," dssdfdg ",27],
+        ];
+
+    for($i=0; $i<count($userInfo); $i++){
+        for($j=0; $j<count($userInfo[$i]); $j++){
+            echo $userInfo[$i][$j];
         }
+        echo "<br>";
     }
+
 ?>
