@@ -374,3 +374,7 @@ innerTest();
 
 ?>
 ```
+
+### Php file intraction with HTML
+
+- html এর ডাটাকে Php file এর মধ্যে নিয়ে যাবে।

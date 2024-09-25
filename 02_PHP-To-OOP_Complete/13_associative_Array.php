@@ -20,15 +20,19 @@ echo $UserInfo["Location"];
 echo "<br>";
 echo $UserInfo["Learning"]; */
 
-/* foreach($UserInfo as  $data){
-    echo $data;
-    echo "<br>";
-} */
+/*
+    foreach($UserInfo as  $data){
+        echo $data;
+        echo "<br>";
+    } 
+*/
 
-/* foreach($UserInfo as $key => $data){
-    echo $key."  =>  ".$data;
-    echo "<br>";
-} */
+/* 
+    foreach($UserInfo as $key => $data){
+        echo $key."  =>  ".$data;
+        echo "<br>";
+    } 
+*/
 
 
 foreach($UserInfo as $keyIS => $data):

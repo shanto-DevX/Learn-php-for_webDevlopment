@@ -16,9 +16,9 @@
 
 // -> Global Variable
     /* 
-    * Create outide the function and access everywhere 
-    * use sameName -> Global & Local Variable
-    * global Variable ব্যবহার এর জন্য function এর ভিতরে global কিওয়ার্ড দিতে হয়
+        * Create outide the function and access everywhere 
+        * use sameName -> Global & Local Variable
+        * global Variable ব্যবহার এর জন্য function এর ভিতরে global কিওয়ার্ড দিতে হয়
     */
 
     

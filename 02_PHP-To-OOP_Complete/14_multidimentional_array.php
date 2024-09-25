@@ -1,15 +1,18 @@
 <?php
     /* 
-        * একটা Array এর মধ্যে আরো  Array এড করা হচ্ছে, মাল্টিডাইমেনশনাল Array;
+        * একটা Array এর মধ্যে আরো  Array এড করা হচ্ছে, মাল্টিডাইমেনশনাল Array; 
     */
 
-/*     $userInfo = [
+/*  
+    $userInfo = [
         [1,"Saiful","Mirpur"],
         [2,"Islam","Dhaka"],
         [3,"Shanto","Narayanganj"],
-    ]; */
+    ];
+*/
 
-/*     echo "<pre>";
+/*  
+    echo "<pre>";
     print_r($userInfo);
     echo "<pre>"; */
 
@@ -46,16 +49,16 @@
         echo "<br>";
     } */
 
-        $userInfo = [
+    $userInfo = [
         [1," Shanto ",24],
         [15," dsAfs ",26],
         [13," dssdfdg ",27],
-        ];
+    ];
 
     for($i=0; $i<count($userInfo); $i++){
         for($j=0; $j<count($userInfo[$i]); $j++){
             echo $userInfo[$i][$j];
-        }
+    }
         echo "<br>";
     }
 
