@@ -377,4 +377,19 @@ innerTest();
 
 ### Php file intraction with HTML
 
-- html এর ডাটাকে Php file এর মধ্যে নিয়ে যাবে।
+- html এর ডাটাকে Php এর মধ্যে নিয়ে যাবে।
+
+### Type Of Request
+
+![alt text](image-4.png)
+
+- Get Request
+  - Request visible in the address bra
+  - less secure Requests
+  - mostly used get data from the server & Fetch Data
+- Post Request
+  - Request is not visible in the address bra
+  - secure
+  - used Create and update Operations on server
+- Delete Request
+- Put/Patch Request
