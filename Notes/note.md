@@ -393,3 +393,42 @@ innerTest();
   - used Create and update Operations on server
 - Delete Request
 - Put/Patch Request
+
+#### ✨ Get Request
+
+- Get Request এর ডাটা, URL এ দেখায়
+- ? এর পরে Get Request এর ডাটা দেখায়
+- inspact element -> network -> .php file -> headers, playload , preview
+
+```html
+📂 index.html
+<body>
+  <form method="get" action="./get_data.php">
+    <input type="text" name="User_name" placeholder="Enter User Name" />
+    <br />
+    <input type="password" name="User_pass" placeholder="Enter User password" />
+    <br />
+    <button type="submit">Login</button>
+  </form>
+</body>
+```
+
+```php
+  📂 get_data.php
+<?php
+    echo " User Name Is : ".$_GET['User_name'];
+    echo "<br>";
+    echo " User Password Is : ".$_GET['User_pass'];
+?>
+//  OR
+
+<?php
+    if($_GET){
+        echo " User Name Is : ".$_GET['User_name'];
+    echo "<br>";
+    echo " User Password Is : ".$_GET['User_pass'];
+    }else{
+        echo "No Get Data Found";
+    }
+?>
+```

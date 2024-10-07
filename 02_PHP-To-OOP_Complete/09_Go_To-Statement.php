@@ -28,7 +28,7 @@ echo "Statament Jump Line 18 <br>"; */
     }
 }
 
-// * এখানে ৫ এর পরে লুপ ঘুড়া বন্ধ হয়ে যাবে। 
+// * এখানে ৫ এর পরে লুপ চলা বন্ধ হয়ে যাবে। 
 
 skipIs:
 echo "Loop Is Brack" */
