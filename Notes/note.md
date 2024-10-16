@@ -384,11 +384,11 @@ innerTest();
 ![alt text](image-4.png)
 
 - Get Request
-  - Request visible in the address bra
+  - Request visible in the address bar
   - less secure Requests
   - mostly used get data from the server & Fetch Data
 - Post Request
-  - Request is not visible in the address bra
+  - Request is not visible in the address bar
   - secure
   - used Create and update Operations on server
 - Delete Request
@@ -432,3 +432,52 @@ innerTest();
     }
 ?>
 ```
+
+#### ✨ Post Request
+
+- Secure
+- ইউজার ডাটা এড্রেসবার এ দেখায় না।
+- ডাটা সার্ভারে আপডেট এবং ক্রিয়েট এর জন্য ব্যবহার হয়।
+
+```html
+<form action="./test_post.php" method="post">
+  <input type="text" name="User_n" id="name" placeholder="UserName" />
+  <br />
+  <br />
+  <input type="email" name="User_e" id="Email" placeholder="Email" />
+  <br />
+  <br />
+  <input type="password" name="User_p" id="password" placeholder="password" />
+  <br />
+  <br />
+
+  <button type="submit">Singup</button>
+</form>
+```
+
+```php
+<?php
+    echo "User Name : " . $_POST['User_n'];
+    echo "<br>";
+    echo "User Email : " . $_POST['User_e'];
+    echo "<br>";
+    echo "User Password : " . $_POST['User_p'];
+?>
+
+<?php
+
+if($_POST){
+    echo "User Name : " . $_POST['User_n'];
+    echo "<br>";
+    echo "User Email : " . $_POST['User_e'];
+    echo "<br>";
+    echo "User Password : " . $_POST['User_p'];
+  }
+?>
+
+```
+
+#### ✨ $\_Request
+
+- Super Global Variable : Php তে ডিফ্লট থাকে এবং যেকোন জাগায় এক্সেস করা যায়।
+- Get & Post দুইধরনের ডাটা এইখানে পাওয়া যায়।
