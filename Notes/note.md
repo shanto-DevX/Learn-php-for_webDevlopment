@@ -477,7 +477,55 @@ if($_POST){
 
 ```
 
+### Super Global Variable
+
+- ByDefualt Define in php
+- access globaly any project
+
+#### ✨ $GLOBAL
+
+- Const Value দেখায় না
+- `print_r($GLOBALS);` পেজের মধ্যে যত GLOBAL ভেরিএবল আছে সেইগুলো দেখাবে
+
+#### ✨ $\_SERVER
+
+- Server এর সব ইনফ্রমেনশন দেখায়
+
 #### ✨ $\_Request
 
 - Super Global Variable : Php তে ডিফ্লট থাকে এবং যেকোন জাগায় এক্সেস করা যায়।
 - Get & Post দুইধরনের ডাটা এইখানে পাওয়া যায়।
+
+#### ✨ $\_POST
+
+- ইউজার ডাটা এড্রেসবার এ দেখায় না।
+- ডাটা সার্ভারে আপডেট এবং ক্রিয়েট এর জন্য ব্যবহার হয়।
+
+#### ✨ $\_GET
+
+- Get Request এর ডাটা, URL এ দেখায়
+- ? এর পরে Get Request এর ডাটা দেখায়
+- inspact element -> network -> .php file -> headers, playload , preview
+
+#### ✨ $\_FILES
+
+- সাইটের মধ্যে যত ফাইল আপলোড আছে সেইগুলো $\_FILES এর মধ্যেমে যানা যায়
+
+#### ✨ $\_COOKIE
+
+- সাইটের মধ্যে ইউজার এর ডাটা সেভ রাখত $\_COOKIE ব্যবহার হয়।
+
+#### ✨ $\_SESSION
+
+- সাইটের মধ্যে ইউজার এর ডাটা সেভ রাখত $\_COOKIE ব্যবহার হয়।
+
+#### ✨ $\ENV
+
+- Website এর ইনভারোমেন্ট এর তথ্য দেখায়
+
+```php
+- $_FILES
+- $_COOKIE
+- $_SESSION
+- $_ENV
+```
