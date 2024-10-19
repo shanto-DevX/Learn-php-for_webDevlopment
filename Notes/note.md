@@ -479,7 +479,7 @@ if($_POST){
 
 ### Super Global Variable
 
-- ByDefualt Define in php
+- ByDefualt PreDefine Variable in php
 - access globaly any project
 
 #### ✨ $GLOBAL
@@ -510,6 +510,57 @@ if($_POST){
 #### ✨ $\_FILES
 
 - সাইটের মধ্যে যত ফাইল আপলোড আছে সেইগুলো $\_FILES এর মধ্যেমে যানা যায়
+
+- File [Get, Delete, upload, changes] এর জন্য ব্যবহার হয়।
+- ফাইলের ইনফরমেনশন থাকে
+- `move_uploaded_file` ফাইলকে একটা ফোল্ডার এ ট্রান্সাফার করে।
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Upload FIle</title>
+  </head>
+  <body>
+    <form action="./Files.php" method="post" enctype="multipart/form-data">
+      <input
+        type="file"
+        name="FileUpload"
+        id="FileUpload"
+        placeholder="Upload File"
+      />
+      <br />
+      <button>Upload</button>
+    </form>
+  </body>
+</html>
+```
+
+```php
+<?php
+/* if($_FILES['FileUpload']){
+    // print_r($_FILES['FileUpload']);
+    $fileName = $_FILES['FileUpload']['name'];
+    $pathName = $_FILES['FileUpload']['tmp_name'];
+
+    echo $fileName;
+    echo "</br>";
+    echo $pathName;
+} */
+
+📂 Create a Upload Folder
+$pathIs = $_FILES['FileUpload']['name'];
+$uploadPath = './Upload/'.$pathIs;
+
+if(move_uploaded_file($_FILES['FileUpload']['tmp_name'], $uploadPath)){
+    echo "File Upload";
+}else{
+    echo"File Upload Failed";
+}
+?>
+```
+
+---
 
 #### ✨ $\_COOKIE
 
