@@ -565,6 +565,10 @@ if(move_uploaded_file($_FILES['FileUpload']['tmp_name'], $uploadPath)){
 #### ✨ $\_COOKIE
 
 - সাইটের মধ্যে ইউজার এর ডাটা সেভ রাখত $\_COOKIE ব্যবহার হয়।
+- User এর কিছু প্রয়োজনীয় ডাটা সেভ রাখে
+- ডেটা ব্রাউজার এর মধ্যে ষ্টোর হয়
+- ইউজার কবে এক্সেস করেছে, বা লগিন করেছে সেইটা ষ্টোর হয়ে থাকে এবং ইউজার এর বার বার টাইপ করতে হয়না ডাটা এবং সার্ভার থেকে নিতে হয়না।
+- `setcookie(name, value, expire, path, domain/subdomain, secure[Run ONly https], httponly)`
 
 #### ✨ $\_SESSION
 
